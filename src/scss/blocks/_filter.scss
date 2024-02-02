@@ -1,0 +1,21 @@
+.filter {
+	border: 1px solid red;
+	width: 285px;
+	height: 814px;
+
+	grid-column: 2/3;
+}
+
+@media (max-width: 1360px) {
+   .filter {
+		width: 688px;
+		height: 550px;
+   }
+}
+
+@media (max-width: 730px) {
+	.filter {
+		width: 270px;
+		height: 624px;
+	}
+}

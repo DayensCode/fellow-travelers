@@ -1,0 +1,14 @@
+.catalog {
+	display: grid;
+   justify-content: center;
+   grid-column-gap: 84px;
+}
+
+@media (max-width: 1360px) {
+   .catalog {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 40px;
+   }
+}

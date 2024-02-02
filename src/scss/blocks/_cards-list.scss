@@ -1,0 +1,24 @@
+.cards-list {
+	width: 949px;
+	grid-column: 1/2;
+
+	&__item {
+		margin-top: 30px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+@media (max-width: 1360px) {
+   .cards-list {
+		width: 688px;
+   }
+}
+
+@media (max-width: 670px) {
+	.cards-list {
+		width: 270px;
+	}
+}
