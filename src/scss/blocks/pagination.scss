@@ -1,0 +1,50 @@
+.pagination {
+	background-color: #FFFFFF;
+	margin-top: 71px;
+	border-radius: 20px;
+	height: 100px;
+	padding: 25px 40px 25px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__page-numbers {
+		font-size: 20px;
+		font-weight: 700;
+		
+		a {
+			color: var(--text-color);
+			padding: 13px 15px 13px 18px;
+			opacity: 1;
+			transition: opacity .3s ease-in;
+
+			&:hover:not(.active) {
+            opacity: .8;
+			}
+	
+			&:nth-child(1) {
+				background-color: var(--accent);
+				border-radius: 50%;
+			}
+		}
+	}
+
+	&__buttons {
+
+		a {
+			margin-left: 30px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+	}
+
+	&__icon {
+		opacity: 1;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+}
