@@ -1,6 +1,3 @@
 <ul class="cards-list">
-	@@include('templates/card-list__item.html')
-	@@include('templates/card-list__item.html')
-	@@include('templates/card-list__item.html')
-	@@include('templates/card-list__item.html')
+	@@loop('./templates/card-list__item.html', './data/cards.json')
 </ul>

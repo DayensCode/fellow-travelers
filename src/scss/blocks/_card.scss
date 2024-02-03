@@ -139,6 +139,8 @@
 	}
 
 	&__level {
+		display: flex;
+		justify-content: flex-end;
 		margin-top: 36px;
 		grid-row: 3/4;
 		grid-column: 5/6;
@@ -191,7 +193,7 @@
 		}
 
 		&__is-active {
-			left: 200px;
+			left: 240px;
 		}
 
 		&__preferences {
