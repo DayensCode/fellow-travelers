@@ -81,6 +81,12 @@
 	&__countries-icon {
 		width: 34px;
 		height: 24px;
+
+		&:before {  
+			content: "";
+			display: block;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__button {
@@ -276,7 +282,7 @@
 			white-space: wrap;
 			font-size: 20px;
 			line-height: 1;
-			width: 78px;
+			width: 70px;
 		}
 
 		&__is-active {
