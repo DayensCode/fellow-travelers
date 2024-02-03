@@ -3,7 +3,6 @@ const gulp = require('gulp');
 // HTML
 const fileInclude = require('gulp-file-include');
 const htmlclean = require('gulp-htmlclean');
-const webpHTML = require('gulp-webp-html');
 
 // SASS
 const sass = require('gulp-sass')(require('sass'));
@@ -58,7 +57,6 @@ gulp.task('html:docs', function () {
 		.pipe(changed('./docs/'))
 		.pipe(plumber(plumberNotify('HTML')))
 		.pipe(fileInclude(fileIncludeSetting))
-		.pipe(webpHTML())
 		.pipe(htmlclean())
 		.pipe(gulp.dest('./docs/'));
 });
