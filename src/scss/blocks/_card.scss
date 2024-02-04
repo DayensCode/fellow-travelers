@@ -139,11 +139,6 @@
 		}
 	}
 
-	&__transport-icon {
-		width: 22px;
-		height: 22px;
-	}
-
 	&__level {
 		display: flex;
 		justify-content: flex-end;
@@ -279,10 +274,10 @@
 		}
 
 		&__name {
-			white-space: wrap;
+			white-space: normal;
 			font-size: 20px;
 			line-height: 1;
-			width: 70px;
+			width: 50px;
 		}
 
 		&__is-active {
