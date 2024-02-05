@@ -27,6 +27,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		transition: color .2s ease-in;
+
+		&:hover {
+			color: #0B1C49;
+		}
 
 		span {
 			display: none;
@@ -54,6 +59,11 @@
 			font-size: 20px;
 			font-weight: 400;
 			color: #000000;
+			transition: color .2s linear;
+
+			&:hover {
+				color: var(--text-color);
+			}
 		}
 
 		input {
@@ -117,6 +127,11 @@
 			background-position: 50% 50%;
 			background-color: #FFFFFF;
 			border-radius: 50%;
+			transition: background-color .2s linear;
+
+			&:hover {
+				background-color: #E2E5F2;
+			}
 		}
 	}
 
@@ -152,6 +167,7 @@
 	}
 
 	&__range-values {
+		cursor: default;
 		width: 100%;
 		height: 46px;
 		background-color: #FFFFFF;
@@ -182,6 +198,11 @@
 			border-radius: 25px;
 			width: 100%;
 			height: 50px;
+			transition: box-shadow .2s ease-in;
+
+			&:hover {
+				box-shadow: 1px 3px 6px #DDAE09;
+			}
 		}
 	}
 }
@@ -223,10 +244,6 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
-
-			&:nth-child(5) {
-				align-items: center;
-			}
 		}
 
 		&__button {
@@ -292,7 +309,7 @@
 	}
 
 	#range-button {
-		margin-bottom: 5px;
+		margin-top: 7px;
 	}
 }
 
@@ -426,6 +443,6 @@
 	}
 
 	#range-button {
-		margin-bottom: 16px;
+		margin-top: 0;
 	}
 }
