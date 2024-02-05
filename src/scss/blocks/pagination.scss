@@ -48,3 +48,32 @@
 		}
 	}
 }
+
+@media (max-width: 1360px) {
+   .pagination {
+		padding: 25px 35px 25px 28px;
+		margin-top: 51px;
+	}
+}
+
+@media (max-width: 730px) {
+	.pagination {
+		padding: 17px 63px 14px;
+		margin-top: 26px;
+		height: 51px;
+
+		&__page-numbers {
+			display: none;
+		}
+
+		&__buttons {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			a {
+				margin-left: 0;
+			}
+		}
+	}
+}
